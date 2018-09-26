@@ -28,10 +28,10 @@ logging:
     org:
       hibernate:
         SQL: DEBUG
+        descriptor:
+          sql:
+            BasicBinder: TRACE
         type: TRACE
-          descriptor:
-            sql:
-              BasicBinder: TRACE
 
   # User service configuration
 user-service-host: http://localhost:8082
