@@ -1,0 +1,5 @@
+info:
+  foo: barbar
+  someList: [2, 3, 7]
+server:
+    port: 8082
