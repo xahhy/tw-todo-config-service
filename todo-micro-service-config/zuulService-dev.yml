@@ -13,3 +13,7 @@ zuul:
       url: http://localhost:8080/todos
       path: /api/todos/**
       sensitiveHeaders:
+    tags:
+      url: http://localhost:8080/tags
+      path: /api/tags/**
+      sensitiveHeaders:
