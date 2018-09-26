@@ -1,0 +1,12 @@
+server:
+  port: 8088
+zuul:
+  routes:
+    user:
+      url: http://localhost:8082/user
+      path: /api/user/**
+      sensitiveHeaders:
+    todo:
+      url: http://localhost:8080/todos
+      path: /api/todos/**
+      sensitiveHeaders:
