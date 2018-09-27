@@ -11,8 +11,8 @@ todoService:
     listOfServers: http://todo-service:8080
 
 zuul:
+  sensitiveHeaders:
   routes:
-    sensitiveHeaders:
     user:
       serviceId: userService
 #      url: http://localhost:8082/user
