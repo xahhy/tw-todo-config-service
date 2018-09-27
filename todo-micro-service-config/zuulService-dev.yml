@@ -13,7 +13,7 @@ zuul:
 #      url: http://localhost:8082/user
       path: /user/**
       sensitiveHeaders:
-      strip-prefix: false
+      strip-prefix: true
     login:
       url: http://localhost:8082/login
       path: /login/**
