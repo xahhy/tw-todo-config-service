@@ -8,11 +8,11 @@ userService:
 
 zuul:
   routes:
+    sensitiveHeaders:
     user:
       serviceId: userService
 #      url: http://localhost:8082/user
-      path: /user/**
-      sensitiveHeaders:
+      path: /users/**
       stripPrefix: false
     login:
       url: http://localhost:8082/login
@@ -20,8 +20,6 @@ zuul:
     todo:
       url: http://localhost:8080/todos
       path: /todos/**
-      sensitiveHeaders:
     tags:
       url: http://localhost:8080/tags
       path: /tags/**
-      sensitiveHeaders:
