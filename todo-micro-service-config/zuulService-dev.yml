@@ -14,6 +14,7 @@ zuul:
 #      url: http://localhost:8082/user
       path: /users/**
       stripPrefix: false
+      sensitiveHeaders:
     login:
       url: http://localhost:8082/login
       path: /login/**
