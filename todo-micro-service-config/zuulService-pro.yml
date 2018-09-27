@@ -30,6 +30,6 @@ zuul:
       stripPrefix: false
     tags:
 #      url: http://user-service:8080/tags
-      serviceId: userService
+      serviceId: todoService
       path: /tags/**
       stripPrefix: false
