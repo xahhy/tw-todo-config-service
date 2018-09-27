@@ -2,6 +2,8 @@ server:
   port: 8080
 ## Spring DATASOURCE (DataSourceAutoConfiguration & DataSourceProperties)
 spring:
+  application:
+    name: todoService
   datasource:
     url: jdbc:mysql://localhost:3306/flyway?useSSL=false
     username: root
@@ -35,3 +37,7 @@ logging:
 
   # User service configuration
 user-service-host: http://localhost:8082
+
+userService:
+  ribbon:
+    listOfServers: http://localhost:8082, http://localhost:8083
