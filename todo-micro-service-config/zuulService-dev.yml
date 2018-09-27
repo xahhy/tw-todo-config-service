@@ -18,10 +18,11 @@ zuul:
 #      url: http://localhost:8082/user
       path: /users/**
       stripPrefix: false
-      sensitiveHeaders:
     login:
-      url: http://localhost:8082/login
+#      url: http://localhost:8082/login
       path: /login/**
+      serviceId: userService
+      stripPrefix: false
     todo:
 #      url: http://localhost:8080/todos
       serviceId: todoService
