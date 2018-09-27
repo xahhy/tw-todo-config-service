@@ -1,9 +1,15 @@
 server:
   port: 8088
+
+userService:
+  ribbon:
+    listOfServers: http://localhost:8081,http://localhost:8082
+
 zuul:
   routes:
     user:
-      url: http://localhost:8082/user
+      serviceId: userService
+#      url: http://localhost:8082/user
       path: /api/user/**
       sensitiveHeaders:
     login:
