@@ -1,5 +1,6 @@
 server:
   port: 8088
+  context-path: /api
 
 userService:
   ribbon:
@@ -10,16 +11,16 @@ zuul:
     user:
       serviceId: userService
 #      url: http://localhost:8082/user
-      path: /api/user/**
+      path: /user/**
       sensitiveHeaders:
     login:
       url: http://localhost:8082/login
-      path: /api/login/**
+      path: /login/**
     todo:
       url: http://localhost:8080/todos
-      path: /api/todos/**
+      path: /todos/**
       sensitiveHeaders:
     tags:
       url: http://localhost:8080/tags
-      path: /api/tags/**
+      path: /tags/**
       sensitiveHeaders:
