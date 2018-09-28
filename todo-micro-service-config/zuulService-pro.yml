@@ -2,14 +2,6 @@ server:
   port: 8088
   context-path: /api
 
-userService:
-  ribbon:
-    listOfServers: http://user-service:8082
-
-todoService:
-  ribbon:
-    listOfServers: http://todo-service:8080
-
 zuul:
   sensitiveHeaders:
   routes:
