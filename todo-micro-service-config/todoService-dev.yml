@@ -35,9 +35,3 @@ logging:
             BasicBinder: TRACE
         type: TRACE
 
-  # User service configuration
-user-service-host: http://localhost:8082
-
-userService:
-  ribbon:
-    listOfServers: http://localhost:8082, http://localhost:8083

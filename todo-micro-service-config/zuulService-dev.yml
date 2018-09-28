@@ -7,22 +7,20 @@ zuul:
   routes:
     user:
       serviceId: userService
-#      url: http://localhost:8082/user
       path: /users/**
       stripPrefix: false
     login:
-#      url: http://localhost:8082/login
-      path: /login/**
       serviceId: userService
+      path: /login/**
       stripPrefix: false
     todo:
-#      url: http://localhost:8080/todos
       serviceId: todoService
       path: /todos/**
       stripPrefix: false
     tags:
-      url: http://localhost:8080/tags
+      serviceId: todoService
       path: /tags/**
+      stripPrefix: false
 
 spring:
   cloud:
