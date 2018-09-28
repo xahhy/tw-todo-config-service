@@ -33,3 +33,11 @@ zuul:
       serviceId: todoService
       path: /tags/**
       stripPrefix: false
+
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 15000
