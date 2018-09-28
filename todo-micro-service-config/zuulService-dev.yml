@@ -2,17 +2,9 @@ server:
   port: 8088
   context-path: /api
 
-userService:
-  ribbon:
-    listOfServers: http://localhost:8082, http://localhost:8083
-
-todoService:
-  ribbon:
-    listOfServers: http://localhost:8080, http://localhost:8081
-
 zuul:
+  sensitiveHeaders:
   routes:
-    sensitiveHeaders:
     user:
       serviceId: userService
 #      url: http://localhost:8082/user
@@ -31,3 +23,9 @@ zuul:
     tags:
       url: http://localhost:8080/tags
       path: /tags/**
+
+spring:
+  cloud:
+    consul:
+      discovery:
+        health-check-path: /api/health
