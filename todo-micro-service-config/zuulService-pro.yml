@@ -7,7 +7,7 @@ zuul:
   routes:
     user:
 #      serviceId: userService
-      url: http://user-service:8082/user
+      url: http://user-service:8082/users
       path: /users/**
       stripPrefix: false
     login:
