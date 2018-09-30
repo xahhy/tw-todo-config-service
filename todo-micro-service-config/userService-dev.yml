@@ -1,2 +1,9 @@
 server:
   port: 8082
+spring:
+  application:
+    name: userService
+  datasource:
+    url: jdbc:mysql://localhost:3307/todo_user?useSSL=false&createDatabaseIfNotExist=true
+    username: root
+    password: 123456
