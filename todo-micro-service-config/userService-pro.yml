@@ -4,6 +4,6 @@ spring:
   application:
     name: userService
   datasource:
-    url: jdbc:mysql://mysql:3307/todo_user?useSSL=false&createDatabaseIfNotExist=true
+    url: jdbc:mysql://mysql:3306/todo_user?useSSL=false&createDatabaseIfNotExist=true
     username: root
     password: 123456
