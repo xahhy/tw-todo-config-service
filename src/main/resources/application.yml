@@ -8,5 +8,6 @@ spring:
         git:
           uri: https://github.com/xahhy/tw-todo-config-service
           search-paths: todo-micro-service-config
+          timeout: 60
   profiles:
     active: dev
