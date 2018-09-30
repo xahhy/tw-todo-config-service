@@ -42,5 +42,5 @@ dependencyManagement {
 }
 task createDockerImage(type: DockerBuildImage, dependsOn: build) {
 	inputDir = file('.')
-	tags = ['todo-config-service']
+	tags = ['xahhy/todo-config-service']
 }
